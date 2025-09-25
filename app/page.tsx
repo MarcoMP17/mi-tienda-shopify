@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from "@/components/ui/badge"
 import { TrendingUp, Users, ShoppingCart, DollarSign, Package, Target, Globe, Truck, Zap } from "lucide-react"
 import { SalesOverview } from "./components/sales-overview"
 import { CustomerAnalysis } from "./components/customer-analysis"
@@ -65,19 +64,7 @@ export default function Dashboard() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <Badge
-              variant="outline"
-              className="text-lg px-4 py-2 border-2"
-              style={{
-                color: "#1F2B35",
-                borderColor: "#CAD8AB",
-                backgroundColor: "#CAD8AB",
-              }}
-            >
-              En vivo
-            </Badge>
-          </div>
+          {/* Removed Badge component and its container div */}
         </div>
 
         {/* KPIs Overview con colores Mere */}
